@@ -1,0 +1,27 @@
+<%= form_for(@contact, :html => {:class => 'contactForm'}) do |f| %>
+  <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon1">First Name</span>
+    <input name="contact[firstName]" type="text" class="form-control" placeholder="First Name"
+           aria-describedby="sizing-addon1" required>
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon1">Last Name</span>
+    <input name="contact[lastName]" type="text" class="form-control" placeholder="Last Name"
+           aria-describedby="sizing-addon1" required>
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon1">Email</span>
+    <input name="contact[email]" type="email" class="form-control" placeholder="someone@domain.com"
+           aria-describedby="sizing-addon1"
+            required>
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon1">Message</span>
+    <textarea name="contact[messageBody]" class="form-control" placeholder="Write your message here..."
+           aria-describedby="sizing-addon1"
+           required></textarea>
+  </div>
+  <button type="submit" class="btn btn-default" aria-label="Right Align">
+    Submit
+  </button>
+<% end %>

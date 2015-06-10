@@ -1,0 +1,12 @@
+<div class="logo">
+  <%=image_tag('siteLogo.png')%>
+</div>
+<div class="mainNav">
+  <ul class="nav nav-pills">
+    <li role="presentation"><%=link_to 'Home', controller: 'home', action: 'index'%></li>
+    <li role="presentation"><%=link_to 'About', controller: 'home', action: 'about'%></li>
+    <li role="presentation"><%=link_to 'Gallery', controller: 'gallery', action: 'index'%></li>
+    <li role="presentation"><%=link_to 'Curriculum', controller: 'home', action: 'curriculum'%></li>
+    <li role="presentation"><%=link_to 'Contact', controller: 'contacts', action: 'index'%></li>
+  </ul>
+</div>

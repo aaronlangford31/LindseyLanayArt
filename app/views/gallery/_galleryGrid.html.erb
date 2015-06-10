@@ -1,0 +1,11 @@
+<% @galleryItems.in_groups_of(4, false) do |items| %>
+  <div class="row">
+    <% items.each do |item| %>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="<% item.fileName %>" title="<% item.title %>" alt="<% item.altText %>">
+        </a>
+      </div>
+    <% end %>
+  </div>
+<% end %>
