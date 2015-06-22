@@ -1,5 +1,5 @@
 class GalleryController < ApplicationController
   def index
-    @galleryItems = GalleryItem.all
+    @gallery_items = GalleryItem.order(created_at: :desc).all
   end
 end

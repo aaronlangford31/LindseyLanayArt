@@ -1,2 +1,12 @@
 <h1>The Gallery</h1>
-<% render partial: 'gallery/galleryGrid', locals: { galleryItems: @galleryItems } %>
+<% @gallery_items.in_groups_of(4, false) do |items| %>
+  <div class="row">
+    <% items.each do |item| %>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <%=image_tag('gallery/' + item.fileName, alt: item.altText, title: item.title) %>
+        </a>
+      </div>
+    <% end %>
+  </div>
+<% end %>
