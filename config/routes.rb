@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get '/gallery' => 'gallery#index'
 
+  get '/gallery/look/:galleryItem' => 'gallery#look'
+
   get '/curriculum' => 'home#curriculum'
 
 

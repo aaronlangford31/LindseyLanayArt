@@ -25,16 +25,17 @@
     margin-right:auto;
 }
 
-.nav > .li > a:hover {
-    background-color: #730E15;
-}
-
-.mainNav {
-    width: 100%;
-    left: auto;
-    right: auto;
-    text-align: center;
-    margin: auto;
+.nav{
+  margin-left: auto;
+  li{
+    a{
+      color: #ADADAD;
+    }
+    a:hover {
+      background-color: #730E15;
+      color: #ffffff;
+    }
+  }
 }
 
 .input-group {
